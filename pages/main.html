@@ -1,0 +1,16 @@
+<section id="main-content">
+  <div class="container">
+    <div id="search-form" class="col-sm-8 col-sm-offset-2">
+      <form  ng-submit="search()">
+        <div class="form-group" ng-class="{ 'has-error' : noText }">
+          <div class="col-w-80">
+            <input class="form-control" type="text" ng-model="searchTerm" />
+          </div>
+          <div class="col-w-20">
+            <input type="submit" class="btn btn-primary pull-left" value="SEARCH">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

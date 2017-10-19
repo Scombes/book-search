@@ -1,0 +1,17 @@
+<!--
+** Template for search Page.
+-->
+<section id="search-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Search Results for {{ q }}:</h1>
+        <hr>
+
+          <!-- Search Retuls Directive.  -->
+          <search-results  books-object="book"  ng-repeat="book in books" shorten-content-function="shortenContent(bookDescription)" ></search-results>
+
+      </div>
+    </div>
+  </div>
+</section>
